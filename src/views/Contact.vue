@@ -3,7 +3,7 @@
     <h1 class="text-3xl relative">Get in Touch</h1>
     <p class="text-blue relative">Lorum ipsum dulce et decorum est, amet, consiccteur.</p>
   </section>
-  <div class="contact flex mx-auto w-full flex-col sm:w-10/12 sm:max-w-xl xl:flex-row xl:max-w-7xl 2xl:max-w-screen-2xl">
+  <section class="contact flex mx-auto w-full flex-col pt-0 sm:w-10/12 sm:max-w-xl xl:flex-row xl:max-w-7xl 2xl:max-w-screen-2xl">
     <section class="form bg-blue rounded-sm flex flex-col mb-5 xl:w-5/12 xl:h-full xl:mb-0 xl:pr-10">
       <label class="text-left" for="name">Name *</label>
       <input class="mb-5 border-sm" v-model="name" placeholder="Your Name" name="name" required>
@@ -37,7 +37,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </section>
 </template>
 
 <style scoped>

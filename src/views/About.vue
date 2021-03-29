@@ -26,7 +26,7 @@
     </section>
     <img alt="BACP Registered Member" src="../assets/bacp.png" class="hidden absolute right-6 bottom-0 ml-auto lg:block" />
   </div>
-  <section class="relative bg-purple ml-auto flex md:justify-center mt-36 lg:mt-14 xl:w-10/12 xl:right-8 xl:rounded-t-sm xl:mx-auto xl:max-w-6xl 2xl:w-9/12">
+  <section class="mx-25 relative bg-purple ml-auto flex md:justify-center mt-36 lg:mt-14 xl:w-10/12 xl:right-8 xl:rounded-t-sm xl:mx-auto xl:max-w-6xl 2xl:w-9/12">
     <img class="hidden lg:inline-block w-2/6 max-w-xs xl:w-4/12 rounded-sm" alt="" src="../assets/tuscany.jpg" />
     <div class="flex flex-col lg:w-4/6 justify-center lg:pl-10 xl:w-8/12">
       <h3 class="text-2xl mb-3 text-left lg:text-left">Therapy I Offer.</h3>
@@ -40,7 +40,7 @@
       </button>
     </div>
   </section>
-  <section class="relative bg-blue flex md:justify-center xl:w-10/12 xl:rounded-b-sm xl:mx-auto xl:max-w-6xl xl:left-8"> 
+  <section class="mx-25 relative bg-blue flex md:justify-center xl:w-10/12 xl:rounded-b-sm xl:mx-auto xl:max-w-6xl xl:left-8"> 
     <div class="flex flex-col lg:w-4/6 justify-center lg:pr-10 xl:w-8/12">
       <h3 class="text-2xl text-left lg:text-right mb-3">Lorum Ipsum.</h3>
       <p class="text-left mr-5 lg:text-right">
@@ -54,7 +54,7 @@
     </div>
     <img class="hidden lg:inline-block w-2/6 max-w-xs rounded-sm xl:w-4/12 " alt="" src="../assets/tuscany.jpg" />
   </section>
-    <section class="relative bg-blue ml-auto flex md:justify-center xl:w-10/12 xl:rounded-sm xl:mx-auto xl:max-w-6xl xl:left-8 2xl:w-9/12">
+  <section class="mx-25 relative bg-blue ml-auto flex md:justify-center xl:w-10/12 xl:rounded-sm xl:mx-auto xl:max-w-6xl xl:left-8 2xl:w-9/12">
     <img class="hidden lg:inline-block w-2/6 max-w-xs xl:w-4/12 rounded-sm" alt="" src="../assets/tuscany.jpg" />
     <div class="flex flex-col lg:w-4/6 justify-center lg:pl-10 xl:w-8/12">
       <h3 class="text-2xl mb-3 text-left">My Office.</h3>
@@ -68,7 +68,7 @@
       </button>
     </div>
   </section>
-  <section class="relative bg-purple ml-auto flex md:justify-center xl:w-10/12 xl:right-8 xl:rounded-sm xl:mx-auto xl:max-w-6xl 2xl:w-9/12">
+  <section class="mx-25 relative bg-purple ml-auto flex md:justify-center xl:w-10/12 xl:right-8 xl:rounded-sm xl:mx-auto xl:max-w-6xl 2xl:w-9/12">
     <div class="flex flex-col lg:w-4/6 justify-center lg:pr-10 xl:w-8/12">
       <h3 class="text-2xl mb-3 text-left lg:text-right">Therapy I Offer.</h3>
       <p class="text-left ml-5 lg:text-right lg:mr-5">
