@@ -25,6 +25,9 @@ button {
 section:not(.intro) {
     min-height: 300px;
 }
+.text-blue {
+    color: #37387D;
+}
 .text-grey {
     color: #B0B5BF;
 }
@@ -44,6 +47,6 @@ section:not(.intro) {
     width: 85%;
     max-width: 320px
   }
-  .headshot-lg {
-    width: 320px;
-  }
+.headshot-lg {
+width: 320px;
+}
