@@ -5,6 +5,7 @@ import Contact from "../views/Contact.vue";
 import Blog from "../views/Blog.vue";
 import FAQs from "../views/FAQs.vue";
 import Testimonials from "../views/Testimonials.vue";
+import TherapyContract from "../views/TherapyContract.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/testimonials",
     name: "Testimonials",
     component: Testimonials,
+  },
+  {
+    path: "/therapy-contract",
+    name: "Therapy Contract",
+    component: TherapyContract,
   },
 ];
 

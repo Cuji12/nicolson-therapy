@@ -25,6 +25,9 @@ button {
 section:not(.intro) {
     min-height: 300px;
 }
+.wrapper {
+    min-height: 68vh;
+}
 .text-blue {
     color: #37387D;
 }

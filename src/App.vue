@@ -23,7 +23,7 @@
       </li>
     </ul>
   </div>
-  <header id="header" class="bg-dark-blue py-4 px-10 flex items-center justify-between">
+  <header id="header" class="bg-dark-blue py-4 px-10 flex items-center justify-between 2xl:px-32">
     <img alt="Nicolson Therapy Logo" height="150" width="100" src="./assets/logo.png" />
     <div class="md:hidden flex flex-col w-1/12 cursor-pointer burger-menu" id="burger" @click="openMenu">
       <hr class="mb-2">
