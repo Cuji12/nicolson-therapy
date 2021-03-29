@@ -35,6 +35,9 @@ section:not(.intro) {
   margin-left: 25px;
   margin-right: 25px;
 }
+.p-25px {
+    padding: 25px;
+}
 .text-grey {
     color: #B0B5BF;
 }
@@ -56,4 +59,15 @@ section:not(.intro) {
   }
 .headshot-lg {
 width: 320px;
+}
+.blog-button {
+    width: 125px;
+    height: 51px;
+}
+.blog-post-intro {
+    height: 200px;
+}
+.blog-hr {
+    border: none;
+    height: 2px;
 }
