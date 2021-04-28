@@ -19,7 +19,6 @@
       <section class="relative flex rounded-sm bg-purple flex-col xl:w-7/12 xl:h-full xl:rounded-l-lg xl:right-5 2xl:flex-row 2xl:items-center">
 
         <div id="map">
-          <GoogleMap />
         </div>
 
         <div class="2xl:flex-col 2xl:ml-10">
@@ -86,11 +85,9 @@
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import { GoogleMap } from '../components/GoogleMap.vue'
 
 export default defineComponent({
   components: {
-    GoogleMap
   }
 })
 </script>
