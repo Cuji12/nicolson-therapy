@@ -1,3 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
+    color: #37387D;
+    font-weight: 700;
+}
+section,footer {
+    padding: 25px;
+    /* max-width: 83% */
+}
+button {
+    width: 125px; 
+    height: 40px;
+    border-radius: 2px;
+}
+section:not(.intro) {
+    min-height: 300px;
+}
+.wrapper {
+    min-height: 68vh;
+}
+.text-blue {
+    color: #37387D;
+}
+.mx-25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.p-25px {
+    padding: 25px;
+}
+.text-grey {
+    color: #B0B5BF;
+}
+.bg-purple {
+    background-color: #DBCDE3;
+}
+.bg-blue {
+    background-color: #CBE5E7;
+}
+.bg-dark-blue {
+    background-color: #37387D;
+}
+.bg-dark-blue-darken {
+    filter: brightness(50%);
+}
+.headshot {
+    width: 85%;
+    max-width: 320px
+  }
+.headshot-lg {
+width: 320px;
+}
+.blog-button {
+    width: 125px;
+    height: 51px;
+}
+.blog-post-intro {
+    height: 200px;
+}
+.blog-hr {
+    border: none;
+    height: 2px;
+}
