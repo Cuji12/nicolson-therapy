@@ -11,7 +11,8 @@
     "node-libs-browser": "^2.2.1",
     "ol": "^6.5.0",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.4"
+    "vue-router": "^4.0.4",
+    "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",

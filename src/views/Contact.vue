@@ -17,8 +17,11 @@
         <button class="bg-dark-blue text-white border-sm self-end">Send</button>
       </section>
       <section class="relative flex rounded-sm bg-purple flex-col xl:w-7/12 xl:h-full xl:rounded-l-lg xl:right-5 2xl:flex-row 2xl:items-center">
-        <div id="map" class="map xl:max-width-full">
+
+        <div id="map">
+          <GoogleMap />
         </div>
+
         <div class="2xl:flex-col 2xl:ml-10">
           <div class="flex text-left mb-5 mt-10 items-center 2xl:mb-10">
             <img class="mr-5 xl:w-6/12" src="../assets/location.png" alt="Location Icon" />
@@ -65,10 +68,9 @@
     height: 35px;
     width: 35px;
   }
-  .map {
+  #map {
     height: 400px;
     width: 100%;
-    background-color: white;
   }
 
   @media (min-width: 1280px) {
@@ -80,12 +82,15 @@
     }
   }
 </style>
+
+
 <script>
 import { defineComponent } from '@vue/composition-api'
+import { GoogleMap } from '../components/GoogleMap.vue'
 
 export default defineComponent({
-  setup() {
- 
-  },
+  components: {
+    GoogleMap
+  }
 })
 </script>

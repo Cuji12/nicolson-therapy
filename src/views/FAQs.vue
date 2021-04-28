@@ -12,7 +12,7 @@
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </div>
-        <img class="w-1/12 chevron" src="../assets/chevron.svg">
+        <img class="w-1/12 chevron" src="../assets/chevron.svg" @click="clickTab()">
       </div>
       <div class="flex closed items-start faq p-5 rounded-sm">
         <div class="w-11/12">
@@ -22,7 +22,7 @@
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </div>
-        <img class="w-1/12 chevron" src="../assets/chevron.svg">
+        <img class="w-1/12 chevron" src="../assets/chevron.svg" @click="clickTab()">
       </div>
       <div class="flex closed items-start faq p-5 rounded-sm">
         <div class="w-11/12">
@@ -32,7 +32,7 @@
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </div>
-        <img class="w-1/12 chevron" src="../assets/chevron.svg">
+        <img class="w-1/12 chevron" src="../assets/chevron.svg" @click="clickTab()">
       </div>
       <div class="flex closed items-start faq p-5 rounded-sm">
         <div class="w-11/12">
@@ -42,7 +42,7 @@
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </div>
-        <img class="w-1/12 chevron" src="../assets/chevron.svg">
+        <img class="w-1/12 chevron" src="../assets/chevron.svg" @click="clickTab()">
       </div>
       <div class="flex closed items-start faq p-5 rounded-sm">
         <div class="w-11/12">
@@ -52,14 +52,37 @@
             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
           </p>
         </div>
-        <img class="w-1/12 chevron" src="../assets/chevron.svg">
+        <img class="w-1/12 chevron" src="../assets/chevron.svg" @click="clickTab()">
       </div>
     </section>
   </div>
 </template>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  methods: {
+    clickTab() {
+      var clickedElementParent = event.target.parentElement;
+      if(clickedElementParent.classList.contains('closed')) {
+        clickedElementParent.classList.remove('closed');
+        clickedElementParent.classList.add('open');
+      } else {
+        clickedElementParent.classList.remove('open');
+        clickedElementParent.classList.add('closed');
+      }
+    },
+  
+  },
+  setup() {
+    
+  },
+})
+</script>
+
 <style scoped>
   .faq {
-    cursor: pointer;
     transition: 0.3s ease-in-out;
   }
   .faq.closed p {
@@ -86,5 +109,6 @@
   .chevron {
     height: 35px;
     width: 35px;
+    cursor: pointer;
   }
 </style>
