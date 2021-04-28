@@ -18,7 +18,7 @@
       </section>
       <section class="relative flex rounded-sm bg-purple flex-col xl:w-7/12 xl:h-full xl:rounded-l-lg xl:right-5 2xl:flex-row 2xl:items-center">
 
-      <iframe
+      <iframe id="map"
         width="600"
         height="450"
         style="border:0"
