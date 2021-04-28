@@ -18,8 +18,15 @@
       </section>
       <section class="relative flex rounded-sm bg-purple flex-col xl:w-7/12 xl:h-full xl:rounded-l-lg xl:right-5 2xl:flex-row 2xl:items-center">
 
-        <div id="map">
-        </div>
+      <iframe
+        width="600"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDv3SVe_ZOXbddUg-2a538ySO0LkAYwGsA
+          &q=7+Rippenden+Avenue">
+      </iframe>
 
         <div class="2xl:flex-col 2xl:ml-10">
           <div class="flex text-left mb-5 mt-10 items-center 2xl:mb-10">
