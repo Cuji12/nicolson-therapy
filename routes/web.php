@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SiteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::controller(SiteController::class)->group(function () {
+    Route::get('/', 'index')->name('site.index');
+    Route::get('/about', 'about')->name('site.about');
+    Route::get('/blog', 'blog')->name('site.blog');
+    Route::get('/contact', 'contact')->name('site.contact');
+    Route::get('/faqs', 'faqs')->name('site.faqs');
+    Route::get('/testimonials', 'testimonials')->name('site.testimonials');
+    
+    Route::post('/contact', 'post')->name('site.post');
 });
