@@ -62,7 +62,7 @@ class HomeCrudController extends CrudController
         CRUD::field('content');
         CRUD::field('url')->type('url');
         CRUD::field('button_text');
-        CRUD::field('image_url')->type('upload');
+        CRUD::field('image_url')->type('upload')->upload('true');
         CRUD::field('hide');
     }
 

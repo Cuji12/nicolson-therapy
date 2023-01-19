@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use \Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
-// use App\Traits\UploadTrait;
+use Illuminate\Support\Facades\Storage;
 
 class Home extends Model
 {
     use CrudTrait;
     use HasFactory;
-    // use UploadTrait;
 
     protected $table = 'home';
 
@@ -22,8 +21,12 @@ class Home extends Model
         $attribute_name = "image_url";
         $disk = "public";
         $destination_path = "";
-        $fileName = time() . $value;
 
-        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path, $fileName);
+        $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path, $fileName = null);
+    }
+
+    public function getImageUrl() 
+    {
+        return Storage::url($this->image_url);
     }
 }
