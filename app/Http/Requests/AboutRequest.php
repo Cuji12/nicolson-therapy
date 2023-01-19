@@ -28,7 +28,9 @@ class AboutRequest extends FormRequest
             'title' => 'required|max:255',
             'content' => 'required',
             'button_text' => 'max:50',
-            'hide' => 'boolean'
+            'url' => 'exclude_if:button_text,null|required|active_url',
+            'hide' => 'boolean',
+            'image_url' => 'sometimes|required'
         ];
     }
 

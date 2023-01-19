@@ -21,9 +21,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
         <link rel="shortcut icon" href="/favicon.png">
     </head>
-    <body class="relative min-h-screen antialiased pb-96 lg:pb-72" x-data="{ open: false }" x-bind:class="open ? 'overflow-hidden' : ''">
-        <header class="flex justify-between items-center h-20 xl:h-24 xl:px-12 px-8 5xl:justify-around">
-            <a class="logo text-xl text-light-blue" href="{{route('site.index') }}">
+    <body class="relative antialiased pb-96 sm:pb-32 lg:pb-50 xl:pb-0" x-data="{ open: false }" x-bind:class="open ? 'overflow-hidden' : ''">
+        <header class="flex items-center justify-between h-20 px-8 xl:h-24 xl:px-12 5xl:justify-around">
+            <a class="text-xl logo text-light-blue lg:text-2xl" href="{{route('site.index') }}">
                 <strong class="text-blue logo">Nicolson</strong>Therapy
             </a>
             <nav class="hidden xl:flex">
@@ -46,7 +46,7 @@
                     <li class="mx-2">
                         <a class="hover:text-purple active:text-purple" href="{{ route('site.testimonials') }}">Testimonials</a>
                     </li>
-                    <li class="ml-5 text-purple">
+                    <li class="ml-5 text-blue hover:text-dark-blue">
                         <a href="mailto:hello@nicolsontherapy.co.uk">
                             hello@nicolsontherapy.co.uk
                         </a>               
@@ -67,9 +67,9 @@
 
         @yield('content')
 
-        <footer class="absolute bottom-0 w-full bg-blue text-white">
-            <div class="flex flex-wrap justify-between p-6 mx-auto text-lg max-w-112 xl:max-w-160 gap-y-6">
-                <div class="xl:w-2/6">
+        <footer class="absolute bottom-0 w-full text-white bg-blue">
+            <div class="flex flex-wrap justify-center p-6 mx-auto text-lg max-w-112 xl:max-w-160 gap-y-6 lg:justify-start">
+                <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
                     <p class="text-xl font-bold">Quick Links</p>
                     <ul class="flex flex-col gap-y-1">
                         <li>
@@ -92,7 +92,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="xl:w-2/6">
+                <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
                     <p class="text-xl font-bold">Get in Touch</p>
                     <ul class="flex flex-col gap-y-1 ">
                         <li>
@@ -103,7 +103,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="xl:w-2/6">
+                <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
                     <p class="text-xl font-bold">Help and Advice</p>
                     <ul class="flex flex-col gap-y-1 ">
                         <li>
@@ -114,7 +114,7 @@
                         </li>
                     </ul>
                 </div>
-                 <div class="xl:w-2/6">
+                 <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
                     <p class="text-xl font-bold">Contract</p>
                     <ul class="flex flex-col gap-y-1 ">
                         <li>
@@ -125,7 +125,7 @@
                         </li>
                     </ul>
                 </div>
-                <p class="w-full text-sm xl:text-md text-slate-300 text-center">
+                <p class="self-center max-w-2xl mx-auto text-sm text-center xl:text-md text-slate-300">
                     Nicolson Therapy Ltd a company incorporated and registered in England and Wales with company number LORUM whose registered office is at 
                     7 Rippenden, Manchester, England, M21 9SS
                 </p>

@@ -43,6 +43,7 @@ class AboutCrudController extends CrudController
         CRUD::column('content');
         CRUD::column('url');
         CRUD::column('button_text');
+        CRUD::field('image_url')->type('upload');
         CRUD::column('hide');
     }
 

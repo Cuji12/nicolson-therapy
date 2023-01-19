@@ -58,7 +58,7 @@ class PostCrudController extends CrudController
         CRUD::setValidation(PostRequest::class);
 
         CRUD::field('title');
-        CRUD::field('content');
+        CRUD::field('content')->type('summernote');
         CRUD::field('tags');
         CRUD::field('hide');
     }
