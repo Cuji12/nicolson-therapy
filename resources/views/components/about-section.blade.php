@@ -2,8 +2,8 @@
     'model',
 ])
 
-<section class="rounded-sm flex flex-col w-full p-5 odd:bg-purple even:bg-light-blue xl:flex-row xl:odd:flex-row-reverse xl:flex-wrap 
-    xl:items-center xl:justify-center xl:px-12 2xl:w-10/12 2xl:even:ml-auto 2xl:even:mr-20 2xl:odd:ml-20 3xl:w-9/12 3xl:even:mr-40 3xl:odd:ml-40 4xl:w-7/12 4xl:even:mr-112 4xl:odd:ml-112">
+<section class="rounded-sm flex flex-col w-full p-5 even:bg-purple odd:bg-light-blue xl:flex-row xl:odd:flex-row-reverse xl:flex-wrap 
+    xl:items-center xl:justify-center xl:px-12 2xl:w-10/12 2xl:odd:ml-auto 2xl:odd:mr-20 2xl:even:ml-20 3xl:w-9/12 3xl:odd:mr-40 3xl:even:ml-40 4xl:w-7/12 4xl:odd:mr-112 4xl:even:ml-112">
     <div class="xl:block xl:w-8/12">
         <h2 class="text-2xl text-blue font-playfair md:text-3xl xl:w-full">{{ $model->title }}</h2>
         <p class="pl-4 mt-2">{{ $model->content }}</p>

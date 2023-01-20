@@ -21,9 +21,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
         <link rel="shortcut icon" href="/favicon.png">
     </head>
-    <body class="relative antialiased pb-96 sm:pb-32 lg:pb-50 xl:pb-0" x-data="{ open: false }" x-bind:class="open ? 'overflow-hidden' : ''">
-        <header class="flex items-center justify-between h-20 px-8 xl:h-24 xl:px-12 5xl:justify-around">
-            <a class="text-xl logo text-light-blue lg:text-2xl" href="{{route('site.index') }}">
+    <body style="background-image: url('/images/background.svg')" class="relative antialiased pb-96 sm:pb-32 lg:pb-50 2xl:pb-0 bg-gradient-to-tl" x-data="{ open: false }" x-bind:class="open ? 'overflow-hidden' : ''">
+        <header class="flex items-center justify-between h-20 px-8 xl:h-24 xl:px-12 5xl:justify-around bg-white">
+            <a class="text-xl logo text-light-blue lg:text-2xl 4xl:text-3xl" href="{{route('site.index') }}">
                 <strong class="text-blue logo">Nicolson</strong>Therapy
             </a>
             <nav class="hidden xl:flex">
@@ -68,8 +68,8 @@
         @yield('content')
 
         <footer class="absolute bottom-0 w-full text-white bg-blue">
-            <div class="flex flex-wrap justify-center p-6 mx-auto text-lg max-w-112 xl:max-w-160 gap-y-6 lg:justify-start">
-                <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
+            <div class="flex flex-wrap justify-between p-6 mx-auto text-lg max-w-xl 2xl:max-w-5xl gap-y-6">
+                <div>
                     <p class="text-xl font-bold">Quick Links</p>
                     <ul class="flex flex-col gap-y-1">
                         <li>
@@ -92,7 +92,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
+                <div>
                     <p class="text-xl font-bold">Get in Touch</p>
                     <ul class="flex flex-col gap-y-1 ">
                         <li>
@@ -103,7 +103,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
+                <div>
                     <p class="text-xl font-bold">Help and Advice</p>
                     <ul class="flex flex-col gap-y-1 ">
                         <li>
@@ -114,7 +114,7 @@
                         </li>
                     </ul>
                 </div>
-                 <div class="w-full sm:w-3/6 lg:w-4/12 xl:w-3/12">
+                 <div>
                     <p class="text-xl font-bold">Contract</p>
                     <ul class="flex flex-col gap-y-1 ">
                         <li>

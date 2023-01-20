@@ -43,8 +43,9 @@ class AboutCrudController extends CrudController
         CRUD::column('content');
         CRUD::column('url');
         CRUD::column('button_text');
-        CRUD::field('image_url')->type('upload');
         CRUD::column('hide');
+        CRUD::column('created_at');
+        CRUD::column('updated_at');
     }
 
     /**
@@ -61,9 +62,8 @@ class AboutCrudController extends CrudController
         CRUD::field('content');
         CRUD::field('url')->type('url');
         CRUD::field('button_text');
+        CRUD::field('image_url')->type('upload')->upload('true');
         CRUD::field('hide');
-        CRUD::column('created_at');
-        CRUD::column('updated_at');
     }
 
     /**

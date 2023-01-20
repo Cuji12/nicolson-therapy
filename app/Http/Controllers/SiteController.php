@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Home;
 use App\Models\About;
 use App\Models\Faqs;
+use App\Models\Post;
 
 class SiteController extends Controller
 {
@@ -16,7 +17,7 @@ class SiteController extends Controller
     }
 
     public function about() {
-        $homeSections = About::whereNot('hide', true)->get();
+        $aboutSections = About::whereNot('hide', true)->get();
 
         return view('site.about', ['aboutSections' => $aboutSections]);
     }
@@ -25,6 +26,12 @@ class SiteController extends Controller
         $posts = Post::whereNot('hide', true)->get();
 
         return view('site.blog', ['posts' => $posts]);
+    }
+
+    public function blogShow($title) {
+        $post = Post::find()->where('uri_title', $title)->one();
+
+        return view('site.blog-show', ['post' => $post]);
     }
 
     public function contact() {

@@ -26,4 +26,10 @@
     .h-112 {
         height: 28rem;
     }
+    .mr-112 {
+        margin-right: 28rem;
+    }
+    .ml-112 {
+        margin-left: 28rem;
+    }
 }

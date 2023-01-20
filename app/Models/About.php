@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use \Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class About extends Model
 {
@@ -22,5 +23,10 @@ class About extends Model
         $destination_path = "";
 
         $this->uploadFileToDisk($value, $attribute_name, $disk, $destination_path, $fileName = null);
+    }
+
+    public function getImageUrl() 
+    {
+        return Storage::url($this->image_url);
     }
 }
