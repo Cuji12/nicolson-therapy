@@ -27,7 +27,7 @@
         @yield('content')
 
         <footer class="absolute bottom-0 w-full text-white bg-blue">
-            <div class="flex flex-wrap justify-between p-6 mx-auto text-lg max-w-xl 2xl:max-w-5xl gap-y-6">
+            <div class="flex flex-wrap justify-between max-w-xl p-6 mx-auto text-lg 2xl:max-w-5xl gap-y-6">
                 <div>
                     <p class="text-xl font-bold">Quick Links</p>
                     <ul class="flex flex-col gap-y-1">

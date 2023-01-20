@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Nicolson Therapy')
-@section('description', 'Doing health things!')
+@section('title', 'FAQs')
+@section('description', 'Answers to commonly asked questions.')
 
 @section('header')
     <x-header title="FAQs" />

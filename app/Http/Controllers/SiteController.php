@@ -7,6 +7,7 @@ use App\Models\Home;
 use App\Models\About;
 use App\Models\Faqs;
 use App\Models\Post;
+use App\Models\Testimonial;
 
 class SiteController extends Controller
 {
