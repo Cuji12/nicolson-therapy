@@ -3,6 +3,10 @@
 @section('title', 'Nicolson Therapy')
 @section('description', 'Doing health things!')
 
+@section('header')
+    <x-header :title="false"/>
+@endsection
+
 @section('content')
     <main class="flex flex-col items-center min-h-screen pt-10 pb-96 md:text-lg">
         <section class="relative flex max-w-6xl pb-40 w-72 sm:w-96 lg:w-11/12 lg:pb-0">
